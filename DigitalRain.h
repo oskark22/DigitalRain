@@ -18,17 +18,17 @@ Allows the DigitalRain class to be reused in multiple source files while keeping
 #define DIGITALRAIN_H
 
 #include <windows.h>	//SetConsoleCursorPosition
-#include <vector>		//Collection of things of the same type
-#include <iostream>	    //cout
+#include <vector>	//Collection of things of the same type
+#include <iostream>	//cout
 
 #define VERBOSE 1
 
 class DigitalRain {
 public:
-	DigitalRain();									//Default constructor
-	DigitalRain(int color);							//Constructor with parameters
+	DigitalRain();							//Default constructor
+	DigitalRain(int color);					        //Constructor with parameters
 	DigitalRain(const DigitalRain&);				//Copy constructor
-	~DigitalRain();									//Destructor
+	~DigitalRain();							//Destructor
 
 
 	void GotoXY(int x, int y);
